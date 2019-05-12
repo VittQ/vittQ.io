@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ora, Bolas</title>
+	 <link rel="stylesheet" type="text/css" href="estilo.css">
+	
+
+</head>
+<body>
+
+
+		<div id="row">
+			<div class="col-menu menu">
+
+				<div class="input">		
+					<input type="text" size="10" id="x" value="Posição X do robô" /><br>
+					<input type="text" size="10" id="y" value="Posição Y do robô" /><br>
+					<button onclick="calculaDistancia(), vetorRobo(), exibeMenu(), geraGrafico1(), foco1()">Calcular</button>
+				</div>		
+
+				<div class="menuItens" id="menuId">
+					
+					<ul> 	
+						<!--li>Campo</li-->					
+						<li onclick="geraGrafico1(), foco1()" id="grafico1">Gráfico 1</li>
+						<li onclick="geraGrafico2(), foco2()" id="grafico2">Gráfico 2</li>
+						<li onclick="geraGrafico3(), foco3()" id="grafico3">Gráfico 3</li>
+						<li onclick="geraGrafico4(), foco4()" id="grafico4">Gráfico 4</li>
+						<li onclick="geraGrafico5(), foco5()" id="grafico5">Gráfico 5</li>
+					</ul>
+
+				</div>	
+
+			</div>
+
+			<div class="col-grafico conteudo">
+				
+				<div id="myChart" class="chart graficoContent"></div>
+			    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+			    <script src="script.js" type="text/javascript"></script>
+
+			</div>
+		</div>
+
+
+</body>
+</html>
